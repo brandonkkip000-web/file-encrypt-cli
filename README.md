@@ -1,14 +1,20 @@
-# file-encrypt-cli
+ï»¿# File Encrypt CLI
 
-Python CLI tool to encrypt and decrypt files using AES-256-GCM.
+A command-line tool to encrypt and decrypt files securely using AES.
 
 ## Installation
-`ash
-pip install .
+```bash
+git clone https://github.com/brandonkkip000-web/file-encrypt-cli.git
+cd file-encrypt-cli
+pip install -r requirements.txt
 Usage
+Encrypt:
+
 bash
 Copy code
-file-encrypt-cli encrypt <file>
-file-encrypt-cli decrypt <file>
-License
-MIT License © 2025 Brandon Kimutai
+python file-encrypt-cli.py encrypt input.txt output.enc
+Decrypt:
+
+bash
+Copy code
+python file-encrypt-cli.py decrypt output.enc input.txt
